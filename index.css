@@ -1,0 +1,158 @@
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+img {
+  width: 100%;
+}
+#profileImage {
+  position: absolute;
+}
+#imageUpload {
+  display: none;
+}
+
+#profileImage {
+  cursor: pointer;
+}
+@media screen and (min-width: 360px) {
+  .hampburger {
+    display: block;
+    margin-top: 10px;
+  }
+
+  .custommodal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s;
+  }
+
+  /* Modal Content */
+  .custommodal-content {
+    position: fixed;
+    top: 2rem;
+    background-color: #fefefe;
+    width: 40%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s;
+  }
+
+  .listofoptions {
+    list-style: none;
+    font-family: 'Roboto', sans-serif;
+  }
+  .listofoptions li {
+    margin: 4px;
+  }
+  .listofoptions li a {
+    text-decoration: none;
+    color: #000;
+    font-weight: 600;
+  }
+
+  @-webkit-keyframes slideIn {
+    from {
+      left: -300px;
+      opacity: 0;
+    }
+    to {
+      left: 0;
+      opacity: 1;
+    }
+  }
+
+  @keyframes slideIn {
+    from {
+      left: -300px;
+      opacity: 0;
+    }
+    to {
+      left: 0;
+      opacity: 1;
+    }
+  }
+
+  @-webkit-keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  .editprofilesection {
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    margin-top: 16px;
+  }
+  .penicon {
+    text-align: center;
+    width: 20%;
+    font-size: 1.4rem;
+    align-self: center;
+  }
+  #profileImage {
+    left: 36%;
+    top: 77%;
+    font-size: 1.4rem;
+  }
+  .captureimage {
+    margin-top: 12px;
+  }
+  .formdetail {
+    justify-content: space-around;
+    margin: 4px 0;
+  }
+
+  /* CHANGE PASSWORD MODAL CSS */
+
+  .modal-body {
+    font-family: 'Playfair Display', sans-serif;
+  }
+
+  .modal-header p {
+    font-size: 1.2rem;
+    font-weight: 600;
+  }
+  .modalbodytext {
+    color: #714db9;
+    font-size: 12px;
+  }
+  .modalrow{
+      margin: 4px;
+  }
+  .editbutton{
+    display: block;
+    border: 2px solid #d1c9c9;
+    width: 50%;
+    height: 50px;
+    margin: 1rem auto;
+    padding-top: 11px;
+    border-radius: 0;
+    color: #000;
+    font-size: 14px;
+  }
+}
