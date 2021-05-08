@@ -19,7 +19,7 @@
 
 <body>
 
-    <div class='container-fluid'>
+    <div class='container-fluid mobileversion'>
         <i id='myBtn' class="fas fa-bars hampburger"></i>
         <div id='myModal' class='custommodal'>
             <div class='custommodal-content'>
@@ -34,142 +34,183 @@
                 </ul>
             </div>
         </div>
-        <div class='row editprofilesection' >
-            <h3 style=" width: 60%; font-weight: bold;align-self: center;margin: 0;">EDIT PROFILE</h3>
-            <i style="text-align: center;width: 20%;font-size: 1.4rem;align-self: center;" class="fas fa-pen penicon"></i>
-        </div>
-
-        <div class='row captureimage'>
+        <div class='row' style='justify-content: space-between;'>
+            <div class='row col-md-8 part'>
+            <div class='row editprofilesection' >
+                <h3 style=" width: 60%; font-weight: bold;align-self: center;margin: 0;">EDIT PROFILE</h3>
+                <i style="text-align: center;width: 20%;font-size: 1.4rem;align-self: center;" class="fas fa-pen penicon"></i>
+            </div>
+            <HR class='line'></HR>
+            
+              <div class='row captureimage'>
                 <p style="text-align: center;position: relative;margin: 0;">
                   <i id="profileImage" class="fas fa-camera"></i>
                   <img class='col-4'src="1.jpg" style="border-radius: 10px; " alt="" >
                 </p>
                 <input id="imageUpload"type="file" name="profile_photo" placeholder="Photo" required="" capture>
                 <p style="text-align: center;color: #617aff; font-weight: 600;margin: 0;margin-top: 8px;">CHANGE PROFILE PHOTO</p>
+              </div>
+          
+          
+
+            <form class='row col-md-10 formsection' style='margin-top: 1rem;'>
+                
+                  <div class="col-md-10 forminput" >
+                    <div class="row align-items-center formdetail">
+                      <div class="col-11 col-md-6" style="color: #617aff; font-weight: 600;">
+                        <label for="inputPassword6 " class="col-form-label" >NAME</label>
+                      </div>
+                      <div class="col-11 col-md-6">
+                        <input type="integer" id="mobno" class="form-control" aria-describedby="passwordHelpInline">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-10">
+                    <div class="row align-items-center formdetail">
+                      <div class="col-11 col-md-6" style="color: #617aff; font-weight: 600";>
+                        <label for="inputPassword6" class="col-form-label">MOBILE NUMBER</label>
+                      </div>
+                      <div class="col-11 col-md-6">
+                        <input type="date" id="dob" class="form-control" aria-describedby="passwordHelpInline">
+                      </div>
+                    </div>
+                  </div>
+              
+
+               
+                  <div class="col-md-10" >
+                    <div class="row align-items-center formdetail">
+                      <div class="col-11 col-md-6" style="color: #617aff; font-weight: 600;">
+                        <label for="inputPassword6" class="col-form-label">ADDRESS</label>
+                      </div>
+                      <div class="col-11 col-md-6">
+                        <input type="integer" id="altermob" class="form-control" aria-describedby="passwordHelpInline">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-10" style="margin:auto 0;" >
+                    <div class="row align-items-center formdetail">
+                      <div class="col-11 col-md-6" style="color: #617aff; font-weight: 600;">
+                        <label for="inputPassword6" class="col-form-label">EMAIL ID</label>
+                      </div>
+                      <div class="col-11 col-md-6">
+                        <input type="email" id="email" class="form-control" aria-describedby="passwordHelpInline">
+                      </div>
+                    </div>
+                  </div>
+                
+
+                
+                  <div class="col-md-10">
+                    <div class="row align-items-center formdetail">
+                      <div class="col-11 col-md-6" style="color: #617aff; font-weight: 600;">
+                        <label for="inputPassword6" class="col-form-label">GENDER</label>
+                      </div>
+                      <div class="col-11 col-md-6" >
+                        <input type="text" id="address" class="form-control" aria-describedby="passwordHelpInline">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-10" >
+                    <div class="row align-items-center formdetail">
+                      <div class="col-11 col-md-6" style="color: #617aff; font-weight: 600;">
+                        <label for="inputPassword6" class="col-form-label">DATE OF BIRTH</label>
+                      </div>
+                      <div class="col-11 col-md-6">
+                        <input type="text" id="gender" class="form-control" aria-describedby="passwordHelpInline">
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-md-10" >
+                    <div class="row align-items-center formdetail">
+                      <div class="col-11 col-md-6" style="color: #617aff; font-weight: 600;">
+                        <label for="inputPassword6" class="col-form-label">ALTERNATIVE MOBILE NUMBER</label>
+                      </div>
+                      <div class="col-11 col-md-6">
+                        <input type="text" id="gender" class="form-control" aria-describedby="passwordHelpInline">
+                      </div>
+                    </div>
+                  </div>
+                
+            </form>
+          </div>
+          <div class="row col-md-4 desktopviewsection part" >
+            <div class='col-md-5' style='padding:0;padding-top: 1.2rem;'>
+                <p style="text-align: center;position: relative;">
+                  <i id="profileImage2" class="fas fa-camera">
+                  </i>
+                  <img src="1.jpg" style="width: 100%; border-radius: 10px; " alt="" >
+                </p>
+                <input id="imageUpload2"type="file" name="profile_photo" placeholder="Photo" required="" capture>
+                
+                <p style="text-align: center;color: #617aff; font-weight: 600;">CHANGE PROFILE PHOTO</p>
+            </div>
+            <div style='width: 1px;height: 300px;background-color:grey;padding: 1px;'></div>
+            <div class="col-md-5 " style="padding:0;padding-top: 1.2rem;">
+                <p><a style="text-decoration: none; color: black; font-size: 15px; font-weight: 600;" href="#">OVERVIEW</a></p>
+                <p><a style="text-decoration: none; color: black; font-size: 15px;font-weight: 600;" href="#">EDIT DETAILS</a></p>
+                <p><a style="text-decoration: none; color: black; font-size: 15px;font-weight: 600;" href="#">SAVED CARDS</a></p>
+                <p><a style="text-decoration: none; color: black; font-size: 15px;font-weight: 600;" href="#">COUPONS</a></p>
+                <p><a style="text-decoration: none; color: black; font-size: 15px;font-weight: 600;" href="#">ORDERS & RETURNS</a></p>
+                <p><a style="text-decoration: none; color: black; font-size: 15px;font-weight: 600;" href="#">ADDRESS</a></p>
+                <p><a style="text-decoration: none; color: black; font-size: 15px;font-weight: 600;" href="#">PRIVACY POLICY</a></p>
+            </div>
+          </div>
         </div>
 
-        <form style='margin-top: 1rem;'>
-            <div class="row">
-              <div class="col-sm-6" >
-                <div class="row align-items-center formdetail">
-                  <div class="col-11 col-md-4 col-lg-5" style="color: #617aff; font-weight: 600;">
-                    <label for="inputPassword6 col-md-8 col-lg-7" class="col-form-label" style='font-weight:600px;'>MOBILE NUMBER</label>
-                  </div>
-                  <div class="col-11 col-md-7">
-                    <input type="integer" id="mobno" class="form-control" aria-describedby="passwordHelpInline">
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="row align-items-center formdetail">
-                  <div class="col-11 col-md-4 col-lg-5" style="color: #617aff; font-weight: 600";>
-                    <label for="inputPassword6" class="col-form-label">DATE OF BIRTH</label>
-                  </div>
-                  <div class="col-11 col-md-8 col-lg-7">
-                    <input type="date" id="dob" class="form-control" aria-describedby="passwordHelpInline">
-                  </div>
-                </div>
-              </div>
-            </div>
 
-            <div class="row ">
-              <div class="col-sm-6" >
-                <div class="row align-items-center formdetail">
-                  <div class="col-11 col-md-4 col-lg-5" style="color: #617aff; font-weight: 600;">
-                    <label for="inputPassword6" class="col-form-label">ALTERNATE MOBILE NUMBER</label>
-                  </div>
-                  <div class="col-11 col-md-8 col-lg-7">
-                    <input type="integer" id="altermob" class="form-control" aria-describedby="passwordHelpInline">
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6" style="margin:auto 0;" >
-                <div class="row align-items-center formdetail">
-                  <div class="col-11 col-md-4 col-lg-5" style="color: #617aff; font-weight: 600;">
-                    <label for="inputPassword6" class="col-form-label">EMAIL ID</label>
-                  </div>
-                  <div class="col-11 col-md-8 col-lg-7">
-                    <input type="email" id="email" class="form-control" aria-describedby="passwordHelpInline">
-                  </div>
-                </div>
-              </div>
-            </div>
+        <div class='row' style='flex-direction: column;justify-content: center;align-items: center; margin-top: 1rem;'>
+            <a  href='#' class=" btn btn-outline-primary" style='width:9rem;text-align: center;margin-top: 5px;font-weight: 600;'>Save Details</a>
 
-            <div class="row ">
-              <div class="col-sm-6">
-                <div class="row align-items-center formdetail">
-                  <div class="col-11 col-md-4 col-lg-5" style="color: #617aff; font-weight: 600;">
-                    <label for="inputPassword6" class="col-form-label">ADDRESS</label>
-                  </div>
-                  <div class="col-11 col-md-8 col-lg-7" >
-                    <input type="text" id="address" class="form-control" aria-describedby="passwordHelpInline">
-                  </div>
-                </div>
-              </div>
-              <div class="col-sm-6" >
-                <div class="row align-items-center formdetail">
-                  <div class="col-11 col-md-4 col-lg-5" style="color: #617aff; font-weight: 600;">
-                    <label for="inputPassword6" class="col-form-label">GENDER</label>
-                  </div>
-                  <div class="col-11 col-md-8 col-lg-7">
-                    <input type="text" id="gender" class="form-control" aria-describedby="passwordHelpInline">
-                  </div>
-                </div>
-              </div>
-            </div>
-        </form>
-       
-        <div class='row' style='flex-direction: column;justify-content: center;align-items: center;'>
-            <a  href='#' class=" col-4 btn btn-outline-primary" style='text-align: center;margin-top: 5px;'>Save Details</a>
-
-            <a data-bs-toggle="modal" data-bs-target="#changePass" class="btn btn-lg editbutton" >
+            <a data-bs-toggle="modal" data-bs-target="#changePass" class="btn btn-lg editbutton" style='font-weight: 600;'>
                 CHANGE PASSWORD
             </a>
         </div>
        
 
         <div class="modal fade" id="changePass" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <p class="modal-title" id="exampleModalLabel">Change Password</p>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body" >
-        <div class="row align-items-center modalrow">
-          <div class="col-5 modalbodytext" >
-            <label for="inputPassword6" class="col-form-label">Old Password</label>
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <p class="modal-title" id="exampleModalLabel">Change Password</p>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body" >
+                <div class="row align-items-center modalrow">
+                  <div class="col-5 modalbodytext" >
+                    <label for="inputPassword6" class="col-form-label">Old Password</label>
+                  </div>
+                  <div class="col-7">
+                    <input type="password" id="oldPassword" class="form-control" aria-describedby="passwordHelpInline">
+                  </div>
+                </div>
+                <div class="row align-items-center modalrow">
+                  <div class="col-5  modalbodytext">
+                    <label for="inputPassword6" class="col-form-label">New Password</label>
+                  </div>
+                  <div class="col-7">
+                    <input type="password" id="newPassword" class="form-control" aria-describedby="passwordHelpInline">
+                  </div>
+                </div>
+                <div class="row align-items-center modalrow" >
+                  <div class="col-5  modalbodytext">
+                    <label for="inputPassword6" class="col-form-label">Confirm Password</label>
+                  </div>
+                  <div class="col-7">
+                    <input type="password " id="confirmPassword" class="form-control" aria-describedby="passwordHelpInline">
+                  </div>
+                </div>
+                <p class="mb-1" style="text-align: center;"><a style="font-weight: 600;font-size: 13px;background-color: #ddd2fc;font-family: 'Roboto', sans-serif;;" href="#" class="btn  px-5 mt-4">CONFIRM</a></p>
+                <p class="mb-1" style="text-align: center; font-size: 18px;">OR</p>
+                <p style="text-align: center;"><a style="font-weight: 600;font-size: 13px;background-color: #ddd2fc;font-family: 'Roboto', sans-serif;" href="changepass.html" class="btn  px-3">CHANGE PASSWORD <br> VIA OTP</a></p>
+              </div>
+            </div>
           </div>
-          <div class="col-7">
-            <input type="password" id="oldPassword" class="form-control" aria-describedby="passwordHelpInline">
-          </div>
-        </div>
-        <div class="row align-items-center modalrow">
-          <div class="col-5  modalbodytext">
-            <label for="inputPassword6" class="col-form-label">New Password</label>
-          </div>
-          <div class="col-7">
-            <input type="password" id="newPassword" class="form-control" aria-describedby="passwordHelpInline">
-          </div>
-        </div>
-        <div class="row align-items-center modalrow" >
-          <div class="col-5  modalbodytext">
-            <label for="inputPassword6" class="col-form-label">Confirm Password</label>
-          </div>
-          <div class="col-7">
-            <input type="password " id="confirmPassword" class="form-control" aria-describedby="passwordHelpInline">
-          </div>
-        </div>
-        <p class="mb-1" style="text-align: center;"><a style="font-weight: 600;font-size: 13px;background-color: #ddd2fc;font-family: 'Roboto', sans-serif;;" href="#" class="btn  px-5 mt-4">CONFIRM</a></p>
-        <p class="mb-1" style="text-align: center; font-size: 18px;">OR</p>
-        <p style="text-align: center;"><a style="font-weight: 600;font-size: 13px;background-color: #ddd2fc;font-family: 'Roboto', sans-serif;" href="changepass.html" class="btn  px-3">CHANGE PASSWORD <br> VIA OTP</a></p>
-      </div>
-    </div>
-  </div>
         </div>
     </div>
 
-
+    
 
 
 
@@ -202,6 +243,20 @@ function fasterPreview( uploader ) {
 }
 
 $("#imageUpload").change(function(){
+    fasterPreview( this );
+});
+$("#profileImage2").click(function(e) {
+    $("#imageUpload2").click();
+});
+
+function fasterPreview( uploader ) {
+    if ( uploader.files && uploader.files[0] ){
+          $('#profileImage2').attr('src', 
+             window.URL.createObjectURL(uploader.files[0]) );
+    }
+}
+
+$("#imageUpload2").change(function(){
     fasterPreview( this );
 });
 </script>
